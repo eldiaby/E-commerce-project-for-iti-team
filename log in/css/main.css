@@ -1,7 +1,9 @@
 /* Global sittings */ 
 :root {
     
-    --main-color: #000
+    --main-color: #000;
+    --error: #e74c3c;
+    --success: #2ecc71;
 }
 
 body {
@@ -116,6 +118,23 @@ header .container nav a:not(:last-child) {
     border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
 }
 
+.form .input.error input {
+    border-color: var(--error);
+}
+
+.form .input.success input {
+    border-color: var(--success);
+}
+
+.form small {
+    color: var(--error);
+    visibility: hidden;
+}
+
+.form .input.error small {
+    visibility: visible;
+}
+
 .create-acount .create-acount-box .create-acount-button {
     width: 100%;
     height: 56px;
@@ -142,6 +161,7 @@ header .container nav a:not(:last-child) {
     justify-content: space-between;
     align-items: center;
     gap: 100px;
+    margin-top: 8px;
 }
 
 .create-acount .create-acount-box a {

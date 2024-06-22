@@ -1,6 +1,5 @@
 "use strict";
 let form = document.getElementById("form");
-let useName = document.getElementById("userName");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 
@@ -33,31 +32,16 @@ function passwordValidation(password) {
   return String(password).match(/(?=.*[!@#$%^&*])/);
 }
 
-function useNamevalidation (userName) {
-/^[A-Za-z][A-Za-z0-9_]{7,29}$/;
-
-
-  return String(userName).match(/^[A-Za-z][A-Za-z0-9_]{7,29}$/);
-}
-
-
-// form validation
 form.addEventListener("submit", function (elemant) {
   elemant.preventDefault();
-  if (useName.value === ""){
-    showErrormsg(useName, "user name is empaty")
-  } else if (!useNamevalidation(useName.value)){
-    showErrormsg(useName, "user name must have at least 8 chars")
+
+  if (email.value === "") {
+    showErrormsg(email, "email is empaty ");
+  } else if (!emailValidation(email.value)) {
+    showErrormsg(email, "email is n't correct");
   } else {
-    showSuccess(useName)
+    showSuccess(email);
   }
-    if (email.value === "") {
-      showErrormsg(email, "email is empaty ");
-    } else if (!emailValidation(email.value)) {
-      showErrormsg(email, "email is n't correct");
-    } else {
-      showSuccess(email);
-    }
   if (password.value === "") {
     showErrormsg(password, "password is empaty ");
   } else if (!passwordValidation(password.value)) {

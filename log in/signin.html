@@ -39,14 +39,18 @@
         <div class="create-acount-box">
             <h1>Log in to Exclusive</h1>
             <p>Enter your details below</p>
-            <div class="input">
-                <input type="text" name="verivaid" placeholder="Email or Phone Number" required autofocus>
-            </div>
-            <div class="input">
-                <input type="password" name="password" placeholder="Password">
-            </div>
-            <div class="create-acount-footer">
-                <button class="create-acount-button"> log In  </button>
+            <form class="form" id="form" action="#" method="post" target="_self">
+                <div class="input">
+                    <input id="email" type="email" name="email" placeholder="Email or Phone Number" required autofocus>
+                    <small>Error massege</small>
+                </div>
+                <div class="input">
+                    <input id="password" type="password" name="password" placeholder="Password" required>
+                    <small>Error massege</small>
+                </div>
+                <div class="create-acount-footer">
+                    <button class="create-acount-button"> log In  </button>
+            </form>
                 <a href="#">Forget Password?</a>
             </div>
             </div>
@@ -120,6 +124,7 @@
         </div>
     </footer>
     <!--End of footer-->
+    <script src="js/main.js"></script>
 </body>
 </html>
 

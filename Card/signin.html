@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Card</title>
     <link rel="icon" type="image/x-icon" href="images/user-interface.png">
     <!-- main css file -->
     <link rel="stylesheet" href="css/main.css">
@@ -22,40 +22,41 @@
     <!-- Main header -->
     <header>
         <div class="container">
-        <h2>Exclusive</h2> 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Sign Up</a>
-        </nav>
-        <input type="search" name="userSearch" placeholder="What are you looking for?">
+            <h2>Exclusive</h2> 
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="#">Sign Up</a>
+            </nav>
+            <input type="search" name="userSearch" placeholder="What are you looking for?">
+            <div class="icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
         </div>
     </header>
     <!-- End of  Main header -->
     <!-- Start of main body -->
-    <section class="create-acount">
-        <img src="images/createAcount.jfif" alt="website main photo" title="main page photo" class="main-image">
-        <div class="create-acount-box">
-            <h1>Create an account</h1>
-            <p>Enter your details below</p>
-            <form id="form" class="form" action="https://www.google.com" target="_self" method="post">
-                <div class="input">
-                    <input type="text" value="" id="userName" name="userName" placeholder="Name" required  autofocus>
-                    <small>Error messege</small>
+    <section class="user-card">
+        <div class="container">
+            <div class="header">
+                <p>Prodect</p>
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Total price</p>
+            </div>
+            <div class="Prodect-card">
+                <div class="Prodect-detalse">
+                    <img src="" alt="Prodect-image" title="Prodect-image">
+                    <p id="prodectName">prodect name</p>
                 </div>
-                <div class="input">
-                    <input type="email" value="" id="email" name="email" placeholder="Email or Phone Number"   required>
-                    <small>Error messege</small>
-                </div>
-                <div class="input">
-                    <input type="password" id="password" value="" name="password" placeholder="Password" required>
-                    <small>Error messege</small>
-                </div>
-                <button class="create-acount-button"> Create Acount </button>
-            </form>
-            <p>Aready have  account?</p>
-            <a href="#">Log in</a>
+                <p id="price">price</p>
+                <input id="prodectQi" name="prodect Qu" type="number" min="0">
+                <p id="prodectTotlPrice">total price</p>
+            </div>
+            <div class="section-footer">Total <span>$000</span></div>
         </div>
     </section>
     <!-- End of main body  -->

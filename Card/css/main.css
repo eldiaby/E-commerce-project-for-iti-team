@@ -1,9 +1,7 @@
 /* Global sittings */ 
 :root {
     
-    --main-color: #000;
-    --error: #e74c3c;
-    --success: #2ecc71;
+    --main-color: #000
 }
 
 body {
@@ -69,100 +67,61 @@ header .container nav a{
 header .container nav a:not(:last-child) {
     margin-right: 48px;
 }
+
+header .container .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+
+header .container .icons i {
+    cursor: pointer;
+    font-size: 20px;
+}
 /* End  of main header */
 /*=====================================================================*/
 /* Start of creating acount section */
 
-.create-acount {
+section {
+    margin-top: 60px;
+    min-height: 500px;
+}
+
+section .container div{
+display: flex;
+grid-template-columns: repeat(4, 23%);
+column-gap: 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.Prodect-card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    column-gap: 48px;
-    margin-bottom: 300px;
+}
+section .container .Prodect-card {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    justify-content: space-between;
 }
 
-.create-acount img {
-    position: relative;
-    width: 919px;
-    height: 706px;
-    top: 75px;
-    left: -8px;
+section .container .Prodect-card img{
+    width: 54px;
 }
 
-.create-acount .create-acount-box {
-    margin-right: 10%;
-    flex-basis: 371px;
+.Prodect-detalse {
+    justify-content: flex-start !important;
 }
 
-.create-acount .create-acount-box h1{
-    font-weight: 500;
-    font-size: 36px;
-    color: var(--main-color);
-    letter-spacing: 2px;
+#prodectQi {
+    width: 60px;
 }
 
-.create-acount .create-acount-box h1 + p{
-    font-family: "Poooins";
-    font-weight: 400;
-    font-size: 16px;
-    opacity: 0.7;
-}
-
-.create-acount .create-acount-box .input input {
-    width: 370px;
-    height: 32px;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: none;
-    border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
-}
-
-.form .input.error input {
-    border-color: var(--error);
-}
-
-.form .input.success input {
-    border-color: var(--success);
-}
-
-.form small {
-    color: var(--error);
-    visibility: hidden;
-}
-
-.form .input.error small {
-    visibility: visible;
-}
-
-.create-acount .create-acount-box .create-acount-button {
-    width: 100%;
-    height: 56px;
-    border-radius: 4px;
-    padding: 16px 122px;
-    gap: 10px;
-    background-color: #DB4444;
-    color: #fafafa;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    border: none;
-}
-
-.create-acount .create-acount-box form+p {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.7;
-    margin-right: 10px;
-    margin-top: 6px;
-}
-
-
-.create-acount .create-acount-box a {
-    color: var(--main-color);
-    opacity: 1;
-    margin-top: 6px;
+section .section-footer {
+    justify-content: flex-end !important;
 }
 
 /* End of creating acount section */ 
